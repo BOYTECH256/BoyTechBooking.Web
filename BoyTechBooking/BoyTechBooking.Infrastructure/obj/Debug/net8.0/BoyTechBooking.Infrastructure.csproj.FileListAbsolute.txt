@@ -1,0 +1,17 @@
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Infrastructure.deps.json
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Infrastructure.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Infrastructure.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Application.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Domain.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Application.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\bin\Debug\net8.0\BoyTechBooking.Domain.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.csproj.AssemblyReference.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.AssemblyInfoInputs.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.AssemblyInfo.cs
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.csproj.CoreCompileInputs.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechB.EA5A35FD.Up2Date
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\refint\BoyTechBooking.Infrastructure.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\BoyTechBooking.Infrastructure.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Infrastructure\obj\Debug\net8.0\ref\BoyTechBooking.Infrastructure.dll

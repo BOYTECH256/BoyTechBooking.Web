@@ -1,0 +1,15 @@
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\bin\Debug\net8.0\BoyTechBooking.Application.deps.json
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\bin\Debug\net8.0\BoyTechBooking.Application.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\bin\Debug\net8.0\BoyTechBooking.Application.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\bin\Debug\net8.0\BoyTechBooking.Domain.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\bin\Debug\net8.0\BoyTechBooking.Domain.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.csproj.AssemblyReference.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.AssemblyInfoInputs.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.AssemblyInfo.cs
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.csproj.CoreCompileInputs.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechB.368DDD08.Up2Date
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\refint\BoyTechBooking.Application.dll
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\BoyTechBooking.Application.pdb
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Application\obj\Debug\net8.0\ref\BoyTechBooking.Application.dll

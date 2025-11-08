@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ASPNETCORE.APP" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BoyTechBooking.Domain\BoyTechBooking.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+		  <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.3.0" />
+		  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.21" />
+		  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+		  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoyTechBooking.Application\BoyTechBooking.Application.csproj" />
+    <ProjectReference Include="..\BoyTechBooking.Domain\BoyTechBooking.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

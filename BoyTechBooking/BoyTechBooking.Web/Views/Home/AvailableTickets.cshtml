@@ -1,0 +1,38 @@
+﻿@model AvailableTicketViewModel
+
+<div class="container mt-5">
+    <h2>@Model.ConcertName - Available Seats</h2>
+    <hr />
+
+    @if (Model.AvailableSeats == null || !Model.AvailableSeats.Any())
+    {
+        <div class="alert alert-warning">
+            No available seats for this concert.
+        </div>
+    }
+    else
+    {
+        <form asp-action="BookTickets" asp-controller="Home" method="post">
+            <div class="row">
+                @foreach (var seat in Model.AvailableSeats)
+                {
+                    <div class="col-md-3 col-sm-4 col-6 mb-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="selectedSeats" 
+                            value="@seat" id="seat_@seat" />
+                            <label class="form-check-label" for="seat_@seat">
+                                Seat @seat
+                            </label>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <input type="hidden" asp-for="ConcertId" />
+
+            <button type="submit" class="btn btn-success mt-3">
+                Book Selected Seats
+            </button>
+        </form>
+    }
+</div>

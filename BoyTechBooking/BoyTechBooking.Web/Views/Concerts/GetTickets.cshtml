@@ -1,0 +1,32 @@
+﻿@model IEnumerable<DashboardViewModel>
+@{
+    ViewData["Title"] = "GetTickets";
+}
+
+<h1>GetTickets</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.UserName)</th>
+            <th>@Html.DisplayNameFor(model => model.ConcertName)</th>
+            <th>@Html.DisplayNameFor(model => model.SeatNumber)</th>           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.UserName)</td>
+                <td>@Html.DisplayNameFor(model => model.ConcertName)</td>
+                <td>@Html.DisplayNameFor(model => model.SeatNumber)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

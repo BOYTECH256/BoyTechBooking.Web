@@ -1,0 +1,44 @@
+﻿<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-action="Index" asp-controller="Home">
+@*             <img src="~/NewFolder/sportsbooking.png" />   
+ *@       
+ <img src="~/NewFolder/sportsbooking.png"
+            alt="SportsBooking Logo"
+            style="height:50px; width:auto; object-fit:contain; vertical-align:middle;"
+            />
+
+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Concerts" asp-action="Index">Concert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Venues" asp-action="Index">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Artists" asp-action="Index">Artist</a>
+                    </li>
+                }
+                @if(User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Tickets" asp-action="Index">Tickets</a>
+                    </li>
+                }
+               
+            </ul>
+            <partial name="_LoginPartial" />
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form> 
+        </div>
+    </div>
+</nav>
