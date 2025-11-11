@@ -1,0 +1,51 @@
+﻿@model CreateMultiPaymentViewModel
+@{
+    ViewData["Title"] = "Create Multi-Concert Payment";
+}
+
+<h1>Create Payment (multi-concert)</h1>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="ApplicationUserId" class="form-label">User</label>
+        <select asp-for="ApplicationUserId" class="form-control" asp-items="ViewBag.Users"></select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TotalAmount" class="form-label">Total Amount</label>
+        <input asp-for="TotalAmount" class="form-control" />
+        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+    </div>
+
+    <h5>Concert allocations (enter amount per concert included in this payment)</h5>
+    <table class="table">
+        <thead>
+            <tr><th>Concert</th><th>Amount</th></tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Items.Count; i++)
+            {
+                <tr>
+                    <td>
+                        @Model.Items[i].ConcertName
+                        <input type="hidden" asp-for="Items[@i].ConcertId" />
+                        <input type="hidden" asp-for="Items[@i].ConcertName" />
+                    </td>
+                    <td>
+                        <input class="form-control" asp-for="Items[@i].Amount" />
+                        <span asp-validation-for="Items[@i].Amount" class="text-danger"></span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" type="submit">Create Payment</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

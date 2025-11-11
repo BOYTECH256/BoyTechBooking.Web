@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Buy Access";
+}
+
+<div class="container text-center mt-5">
+    <h2>Purchase Access to Premium Service</h2>
+    <p class="lead">Get unlimited access for just <strong>$19.99</strong></p>
+
+    <form action="/paypal/create-order" method="post">
+        <input type="hidden" name="amount" value="19.99" />
+        <input type="hidden" name="currency" value="USD" />
+
+        <button type="submit" class="btn btn-primary btn-lg mt-3">
+            <i class="fa fa-paypal"></i> Pay with PayPal
+        </button>
+    </form>
+</div>

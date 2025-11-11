@@ -200,8 +200,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/MyBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcTXlCb29raW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Bookings/PaymentRequired.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcUGF5bWVudFJlcXVpcmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Concerts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Concerts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uY2VydHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Concerts/Edit.cshtml]
@@ -230,6 +258,38 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Payments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Payments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Payments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/PayPal/Cancel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXENhbmNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/PayPal/CreateOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXENyZWF0ZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/PayPal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/PayPal/Pending.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXFBlbmRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/PayPal/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/BOYTECHSOLUTIONS/BoyTechBooking/BoyTechBooking.Web/Views/Shared/Error.cshtml]

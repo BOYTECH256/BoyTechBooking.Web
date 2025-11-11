@@ -1,4 +1,5 @@
 using BoyTechBooking.Application.Common;
+using BoyTechBooking.Application.Services.Implementations;
 using BoyTechBooking.Application.Services.Interfaces;
 using BoyTechBooking.Domain.Models;
 using BoyTechBooking.Web.Models;
@@ -21,10 +22,10 @@ namespace BoyTechBooking.Web.Controllers
         private readonly IBookingService _bookingService;
         private readonly ITicketService _ticketService;
         private readonly UserManager<ApplicationUser> _userManager;
-
+        private readonly IPaymentService _paymentService;
         public HomeController(ILogger<HomeController> logger, IConcertService concertService,
             IBookingService bookingService, ITicketService ticketService,
-            IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager)
+            IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager, IPaymentService paymentService)
         {
             _logger = logger;
             _concertService = concertService;
@@ -32,6 +33,7 @@ namespace BoyTechBooking.Web.Controllers
             _ticketService = ticketService;
             _unitOfWork = unitOfWork;
             _userManager = userManager;
+            _paymentService = paymentService;
         }
 
         public IActionResult Index()
@@ -49,28 +51,7 @@ namespace BoyTechBooking.Web.Controllers
                 }).ToList();
             return View(vm);
         }
-        [HttpGet]
-        public async Task<IActionResult> Details(int id)
-        {
-            var concert =await _concertService.GetConcert(id);
-            if (concert == null)
-            {
-                return NotFound();
-            }
-            var vm=new HomeConcertDetailsViewModel
-            {
-                ConcertId = concert.Id,
-                ConcertName = concert.Name,
-                ConcertDateTime = concert.Date,
-                Description = concert.Description,
-                ArtistName = concert.Artist.Name,
-                ArtistImage = concert.Artist.ImageUrl,
-                VenueName = concert.Venue.Name,
-                VenueAddress = concert.Venue.Address,
-                ConcertImage = concert.ImageUrl
-            };
-            return View(vm);
-        }
+        
         [Authorize]
         public async Task<IActionResult> AvailableTickets(int id)
         {
@@ -167,6 +148,36 @@ namespace BoyTechBooking.Web.Controllers
             var userId = _userManager.GetUserId(User);
             var bookings = _ticketService.GetBookings(userId);
             return View(bookings);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            var concert = await _concertService.GetConcert(id);
+            if (concert == null)
+            {
+                return NotFound();
+            }
+            var vm = new HomeConcertDetailsViewModel
+            {
+                ConcertId = concert.Id,
+                ConcertName = concert.Name,
+                ConcertDateTime = concert.Date,
+                Description = concert.Description,
+                ArtistName = concert.Artist.Name,
+                ArtistImage = concert.Artist.ImageUrl,
+                VenueName = concert.Venue.Name,
+                VenueAddress = concert.Venue.Address,
+                ConcertImage = concert.ImageUrl
+            };
+            // show per-concert paid state and total for the current user
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                vm.HasPaidForThisConcert = await _paymentService.HasPaidAsync(userId, concert.Id);
+                vm.TotalPaidForThisConcert = await _paymentService.GetTotalPaidForConcertAsync(userId, concert.Id);
+            }
+
+            return View(vm);
         }
         public IActionResult Privacy()
         {

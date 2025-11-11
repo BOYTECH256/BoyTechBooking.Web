@@ -21,3 +21,9 @@
 
 </div>
 
+<form asp-controller="PayPal" asp-action="CreateOrder" method="post">
+    <input type="hidden" name="amount" value="19.99" />
+    <input type="hidden" name="currency" value="USD" />
+    <button type="submit" class="btn btn-primary">Pay with PayPal</button>
+    @Html.AntiForgeryToken()
+</form>

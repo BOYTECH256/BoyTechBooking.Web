@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BookingViewModel>
+@{
+    ViewData["Title"] = "Bookings";
+}
+
+<h1>Bookings</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Booking Id</th>
+            <th>Booking Date</th>
+            <th>Concert</th>
+            <th>Tickets</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.BookingId</td>
+                <td>@item.BookingDate.ToString("g")</td>
+                <td>@item.ConcertName</td>
+                <td>@string.Join(", ", item.Tickets.Select(t => t.SeatNumber))</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.BookingId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

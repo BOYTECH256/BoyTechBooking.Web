@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Checkout with PayPal";
+}
+
+<div class="container text-center mt-5">
+    <h2>Purchase Premium Access</h2>
+    <p class="lead">Only $19.99 for full access to BoyTech Booking Services.</p>
+
+    <form asp-controller="PayPal" asp-action="CreateOrder" method="post">
+        <input type="hidden" name="amount" value="19.99" />
+        <input type="hidden" name="currency" value="USD" />
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-primary btn-lg mt-3">
+            <i class="fa fa-paypal"></i> Pay with PayPal
+        </button>
+    </form>
+</div>

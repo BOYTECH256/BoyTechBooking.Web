@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|d:\\boytechsolutions\\boytechbooking\\boytechbooking.web\\views\\shared\\_headernav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|solutionrelative:boytechbooking.web\\views\\shared\\_headernav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|d:\\boytechsolutions\\boytechbooking\\boytechbooking.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|solutionrelative:boytechbooking.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|d:\\boytechsolutions\\boytechbooking\\boytechbooking.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60707BD2-BBB4-4C24-8951-4D0872617679}|BoyTechBooking.Web\\BoyTechBooking.Web.csproj|solutionrelative:boytechbooking.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,48 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BoyTechBooking.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BoyTechBooking.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-08T15:26:19.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BoyTechBooking.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BoyTechBooking.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T15:24:01.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_HeaderNav.cshtml",
-              "DocumentMoniker": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Views\\Shared\\_HeaderNav.cshtml",
-              "RelativeDocumentMoniker": "BoyTechBooking.Web\\Views\\Shared\\_HeaderNav.cshtml",
-              "ToolTip": "D:\\BOYTECHSOLUTIONS\\BoyTechBooking\\BoyTechBooking.Web\\Views\\Shared\\_HeaderNav.cshtml",
-              "RelativeToolTip": "BoyTechBooking.Web\\Views\\Shared\\_HeaderNav.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T18:18:16.565Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -13,6 +13,8 @@ namespace BoyTechBooking.Application.Common
         IConcertRepository ConcertRepository { get; }
         ITicketRepository TicketRepository { get; }
         IVenueRepository VenueRepository { get; }
+        IPaymentRepository PaymentRepository { get; }
+        IPaymentItemRepository PaymentItemRepository { get; }
         void Save();
 
     }

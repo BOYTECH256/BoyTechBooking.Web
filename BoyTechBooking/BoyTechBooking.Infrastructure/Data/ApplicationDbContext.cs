@@ -20,7 +20,8 @@ namespace BoyTechBooking.Infrastructure.Data
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-
-
+        public DbSet<Payment> Payments { get; set; }
+        // Payment items linking a Payment to specific Concerts (for multi-concert payments)
+        public DbSet<PaymentItem> PaymentItems { get; set; }
     }
 }

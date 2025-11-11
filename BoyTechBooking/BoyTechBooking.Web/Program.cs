@@ -1,10 +1,12 @@
 using BoyTechBooking.Application.Common;
 using BoyTechBooking.Application.Common.Utility;
+using BoyTechBooking.Application.Services;
 using BoyTechBooking.Application.Services.Implementations;
 using BoyTechBooking.Application.Services.Interfaces;
 using BoyTechBooking.Domain.Models;
 using BoyTechBooking.Infrastructure.Data;
 using BoyTechBooking.Infrastructure.Repository;
+using BoyTechBooking.Web.Controllers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -26,7 +28,13 @@ builder.Services.AddScoped<ITicketService, TicketService>();
 builder.Services.AddScoped<IUtilityService, UtilityService>();
 builder.Services.AddScoped<IDbInitial, DbInitial>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
-
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+//builder.Services.AddSingleton<PayPalClientFactory>();
+builder.Services.AddSingleton<PayPalClientFactory>(sp =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    return new PayPalClientFactory(config);
+});
 // Configure cookie settings
 builder.Services.ConfigureApplicationCookie(options =>
 {

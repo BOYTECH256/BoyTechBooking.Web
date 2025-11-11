@@ -12,9 +12,36 @@
         <div>Date&Time:@Model.ConcertDateTime.ToString("MMMM dd, yyyy hh:mm") </div>
         <div class="mt-2"><img src="@Model.ArtistImage" class="rounded-circle img-fluid" style="height:auto"></div>
         <div>Artist Name:@Model.ArtistName </div>
-        <div class="mt-3">
-            <a asp-action="AvailableTickets" asp-route-id="@Model.ConcertId" 
-            class="btn btn-primary mt-3">See Available Tickets</a>
 
+        <div class="mt-3">
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                if (Model.HasPaidForThisConcert)
+                {
+                    <div class="alert alert-success">
+                        <strong>Paid:</strong> You have paid for this concert.
+                        @if (Model.TotalPaidForThisConcert > 0)
+                        {
+                            <div>Total paid for this concert: @Model.TotalPaidForThisConcert.ToString("C")</div>
+                        }
+                    </div>
+
+                    <a asp-action="AvailableTickets" asp-route-id="@Model.ConcertId" class="btn btn-primary mt-2">See Available Tickets</a>
+                    <a asp-controller="Bookings" asp-action="Book" asp-route-concertId="@Model.ConcertId" class="btn btn-success mt-2">Book Tickets</a>
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <strong>Not paid:</strong> You have not paid for this concert.
+                    </div>
+
+                    <a class="btn btn-outline-primary" href="/Payment/Start?concertId=@Model.ConcertId">Pay for this concert</a>
+                }
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary">Sign in to pay & book</a>
+            }
+        </div>
     </div>
 </div>

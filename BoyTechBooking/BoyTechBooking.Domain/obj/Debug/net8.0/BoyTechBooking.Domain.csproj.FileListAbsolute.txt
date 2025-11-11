@@ -6,6 +6,7 @@ D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTec
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.AssemblyInfoInputs.cache
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.AssemblyInfo.cs
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.csproj.CoreCompileInputs.cache
+D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.sourcelink.json
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.dll
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\refint\BoyTechBooking.Domain.dll
 D:\BOYTECHSOLUTIONS\BoyTechBooking\BoyTechBooking.Domain\obj\Debug\net8.0\BoyTechBooking.Domain.pdb

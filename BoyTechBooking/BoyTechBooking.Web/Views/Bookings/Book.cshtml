@@ -1,0 +1,38 @@
+﻿@model BookSeatsViewModel
+@{
+    ViewData["Title"] = "Book Seats";
+}
+
+<h1>Book seats for @Model.ConcertName</h1>
+
+<form asp-action="Book" method="post">
+    <input type="hidden" asp-for="ConcertId" />
+
+    <div class="mb-3">
+        <label>Available seats</label>
+        <div class="form-check">
+            @if (Model.AvailableSeats?.Any() == true)
+            {
+                foreach (var seat in Model.AvailableSeats)
+                {
+                    <div>
+                        <input class="form-check-input" type="checkbox" name="SelectedSeatNumbers" value="@seat" id="seat_@seat" />
+                        <label class="form-check-label" for="seat_@seat">Seat @seat</label>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No seats available.</p>
+            }
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Book selected seats</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

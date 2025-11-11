@@ -17,5 +17,8 @@ namespace BoyTechBooking.Web.Models.ViewModels.DashboardViewModels
         public string VenueName { get; set; }
         public string VenueAddress { get; set; }
         public string ConcertImage { get; set; }
+        // Payment-related
+        public bool HasPaidForThisConcert { get; set; }
+        public decimal TotalPaidForThisConcert { get; set; }
     }
 }

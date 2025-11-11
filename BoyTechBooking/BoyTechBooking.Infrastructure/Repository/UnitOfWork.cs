@@ -19,12 +19,16 @@ namespace BoyTechBooking.Infrastructure.Repository
             ConcertRepository = new ConcertRepository (_context);
             TicketRepository = new TicketRepository(_context);
             VenueRepository = new VenueRepository(_context);
+            PaymentRepository = new PaymentRepository(_context);
+            PaymentItemRepository = new PaymentItemRepository(_context);
         }
         public IArtistRepository ArtistRepository { get; private set; }
         public IBookingRepository BookingRepository { get; private set; }
         public IConcertRepository ConcertRepository { get; private set; }
         public ITicketRepository TicketRepository { get; private set; }
         public IVenueRepository VenueRepository { get; private set; }
+        public IPaymentRepository PaymentRepository { get; private set; }
+        public IPaymentItemRepository PaymentItemRepository { get; private set; }
         public void Save()
         {
             _context.SaveChanges();

@@ -173,6 +173,70 @@ namespace BoyTechBooking.Infrastructure.Migrations
                     b.ToTable("Concerts");
                 });
 
+            modelBuilder.Entity("BoyTechBooking.Domain.Models.Payment", b =>
+                {
+                    b.Property<int>("PaymentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("ConcertId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ExternalPaymentId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsSuccessful")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("PaidAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Provider")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("PaymentId");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("BoyTechBooking.Domain.Models.PaymentItem", b =>
+                {
+                    b.Property<int>("PaymentItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentItemId"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ConcertId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PaymentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PaymentItemId");
+
+                    b.HasIndex("PaymentId");
+
+                    b.ToTable("PaymentItems");
+                });
+
             modelBuilder.Entity("BoyTechBooking.Domain.Models.Ticket", b =>
                 {
                     b.Property<int>("TicketId")
@@ -392,6 +456,28 @@ namespace BoyTechBooking.Infrastructure.Migrations
                     b.Navigation("Venue");
                 });
 
+            modelBuilder.Entity("BoyTechBooking.Domain.Models.Payment", b =>
+                {
+                    b.HasOne("BoyTechBooking.Domain.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("BoyTechBooking.Domain.Models.PaymentItem", b =>
+                {
+                    b.HasOne("BoyTechBooking.Domain.Models.Payment", "Payment")
+                        .WithMany("Items")
+                        .HasForeignKey("PaymentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Payment");
+                });
+
             modelBuilder.Entity("BoyTechBooking.Domain.Models.Ticket", b =>
                 {
                     b.HasOne("BoyTechBooking.Domain.Models.Booking", "Booking")
@@ -470,6 +556,11 @@ namespace BoyTechBooking.Infrastructure.Migrations
             modelBuilder.Entity("BoyTechBooking.Domain.Models.Concert", b =>
                 {
                     b.Navigation("Bookings");
+                });
+
+            modelBuilder.Entity("BoyTechBooking.Domain.Models.Payment", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("BoyTechBooking.Domain.Models.Venue", b =>

@@ -1,0 +1,20 @@
+﻿@model BookSeatsViewModel
+@{
+    ViewData["Title"] = "PaymentRequired";
+}
+
+<h1>PaymentRequired</h1>
+
+<h1>Payment required</h1>
+
+<p>You must complete payment before booking seats for this event.</p>
+
+@if (Model != null)
+{
+    <p>Event: @Model.ConcertName</p>
+}
+
+<p>
+    <!-- replace with your payment integration link -->
+    <a class="btn btn-primary" href="/Payment/Start?concertId=@(Model?.ConcertId ?? 0)">Proceed to payment</a>
+</p>

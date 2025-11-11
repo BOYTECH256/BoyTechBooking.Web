@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Payment>
+@{
+    ViewData["Title"] = "Payments";
+}
+
+<h1>Payments</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>User</th>
+            <th>ConcertId</th>
+            <th>Amount</th>
+            <th>TotalAmount</th>
+            <th>PaidAt</th>
+            <th>Successful</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.PaymentId</td>
+                <td>@p.ApplicationUser?.UserName</td>
+                <td>@p.ConcertId</td>
+                <td>@p.Amount</td>
+                <td>@p.TotalAmount</td>
+                <td>@p.PaidAt.ToString("g")</td>
+                <td>@p.IsSuccessful</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@p.PaymentId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

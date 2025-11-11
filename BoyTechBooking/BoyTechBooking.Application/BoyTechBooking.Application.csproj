@@ -13,6 +13,7 @@
   </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.ASPNETCORE.APP" />
+		<PackageReference Include="PayPalCheckoutSdk" Version="1.0.4" />
 	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BoyTechBooking.Domain\BoyTechBooking.Domain.csproj" />

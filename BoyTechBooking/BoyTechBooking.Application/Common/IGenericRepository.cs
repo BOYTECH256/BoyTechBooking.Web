@@ -31,6 +31,6 @@ namespace BoyTechBooking.Application.Common
         void Delete(T entity);
         Task<T> DeleteAsync(T entity);
         void DeleteRange(List<T> entities);
-
+        void Update(T entity);
     }
 }
